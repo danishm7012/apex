@@ -18,6 +18,10 @@
     "products": {
       "via": "categories",
       "collection": "product"
+    },
+    "sub_categories": {
+      "via": "category",
+      "collection": "sub-category"
     }
   }
 }
