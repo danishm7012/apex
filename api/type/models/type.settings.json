@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "sub_categories",
+  "collectionName": "types",
   "info": {
-    "name": "subCategory"
+    "name": "type"
   },
   "options": {
     "increments": true,
@@ -16,16 +16,12 @@
       "required": true,
       "unique": true
     },
-    "category": {
-      "via": "sub_categories",
-      "model": "category"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title"
     },
     "products": {
-      "via": "sub_categories",
+      "via": "type",
       "collection": "product"
     }
   }

@@ -45,8 +45,17 @@
       "type": "richtext",
       "required": true
     },
+    "type": {
+      "via": "products",
+      "model": "type"
+    },
     "categories": {
       "collection": "category",
+      "via": "products",
+      "dominant": true
+    },
+    "sub_categories": {
+      "collection": "sub-category",
       "via": "products",
       "dominant": true
     }
