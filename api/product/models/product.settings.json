@@ -54,10 +54,9 @@
       "via": "products",
       "dominant": true
     },
-    "sub_categories": {
-      "collection": "sub-category",
+    "subcategories": {
       "via": "products",
-      "dominant": true
+      "collection": "subcategory"
     }
   }
 }

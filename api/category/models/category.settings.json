@@ -17,10 +17,6 @@
       "required": true,
       "unique": true
     },
-    "sub_categories": {
-      "via": "category",
-      "collection": "sub-category"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title",
@@ -29,6 +25,10 @@
     "products": {
       "via": "categories",
       "collection": "product"
+    },
+    "subcategories": {
+      "via": "category",
+      "collection": "subcategory"
     }
   }
 }
